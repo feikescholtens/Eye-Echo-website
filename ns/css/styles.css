@@ -933,9 +933,13 @@ strong {
 .site-footer .container {
     position: relative;
     z-index: 2;
-    padding: min(10%, 50px) 0;
+    padding-bottom: min(10%, 50px);
     margin-top: -5px;
     /* Above makes an overlap to ensure no '1 px white line' shows */
+}
+
+.site-footer .container .row {
+    padding-top: min(10%, 50px);
 }
 
 .site-footer svg {

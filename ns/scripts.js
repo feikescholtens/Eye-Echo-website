@@ -38,6 +38,11 @@ document.querySelectorAll(".nav-link").forEach(navLink => {
 
     event.preventDefault()
 
+    //Collapse menu
+    $('.navbar-collapse a').on('click', function() {
+      $(".navbar-collapse").collapse('hide');
+    });
+
     const label = navLink.innerText
     let pixels
 
