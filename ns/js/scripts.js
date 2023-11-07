@@ -13,7 +13,10 @@ document.addEventListener("scroll", updateHeaderPageActive)
 const sections = document.getElementsByTagName("section")
 
 const beginPixelsSections = []
-for (let i = 0; i < sections.length; i++) beginPixelsSections.push(sections[i].offsetTop - 250)
+for (let i = 0; i < sections.length; i++) {
+  if (!sections[i].classList.contains("not-in-header"))
+    beginPixelsSections.push(sections[i].offsetTop - 250)
+}
 beginPixelsSections[0] = 0
 
 function updateHeaderPageActive() {
@@ -21,7 +24,7 @@ function updateHeaderPageActive() {
 
   if (userScrolledPixels >= beginPixelsSections[0] && userScrolledPixels <= beginPixelsSections[1]) setActiveLabel("Home")
   if (userScrolledPixels > beginPixelsSections[1] && userScrolledPixels <= beginPixelsSections[2]) setActiveLabel("Over")
-  if (userScrolledPixels > beginPixelsSections[2] && userScrolledPixels <= beginPixelsSections[3]) setActiveLabel("Soorten")
+  if (userScrolledPixels > beginPixelsSections[2] && userScrolledPixels <= beginPixelsSections[3]) setActiveLabel("Echo")
   if (userScrolledPixels > beginPixelsSections[3]) setActiveLabel("Contact")
 }
 
@@ -50,8 +53,8 @@ document.querySelectorAll(".nav-link").forEach(navLink => {
     if (label === "Home" || label.split("\n")[0] === "Eye Echo") pixels = beginPixelsSections[0]
     //Second check in if statement if for logo in navbar
     if (label === "Over") pixels = beginPixelsSections[1] + 100
-    if (label === "Soorten") pixels = beginPixelsSections[2] + 169
-    if (label === "Contact") pixels = beginPixelsSections[3] + 100
+    if (label === "Echo's") pixels = beginPixelsSections[2] + 169
+    if (label === "Contact" || label === "Afspraak maken") pixels = beginPixelsSections[3] + 100
 
     window.scrollTo({ top: pixels, behavior: "smooth" })
 
