@@ -641,6 +641,10 @@ strong {
     overflow: hidden;
 }
 
+.section-bg-image p {
+    color: #2c2c2c;
+}
+
 .section-bg-image-BACKGROUNDSELF {
     background-image: url('../images/dana-marin-amsterdamian-Sa9msnED0RA-unsplash\ \(1\).jpg');
     background-repeat: no-repeat;

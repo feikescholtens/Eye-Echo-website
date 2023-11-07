@@ -53,7 +53,7 @@ document.querySelectorAll(".nav-link").forEach(navLink => {
     if (label === "Home" || label.split("\n")[0] === "Eye Echo") pixels = beginPixelsSections[0]
     //Second check in if statement if for logo in navbar
     if (label === "Over") pixels = beginPixelsSections[1] + 100
-    if (label === "Echo's") pixels = beginPixelsSections[2] + 169
+    if (label === "De echo") pixels = beginPixelsSections[2] + 169
     if (label === "Contact" || label === "Afspraak maken") pixels = beginPixelsSections[3] + 100
 
     window.scrollTo({ top: pixels, behavior: "smooth" })
