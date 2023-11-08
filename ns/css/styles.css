@@ -468,10 +468,6 @@ strong {
     color: var(--white-color);
 }
 
-.navbar .navbar-brand-image {
-    /* filter: brightness(0) invert(1); */
-}
-
 .navbar-brand-image {
     width: 48px;
     height: 48px;
@@ -481,15 +477,7 @@ strong {
     line-height: normal;
     margin-left: 10px;
     position: relative;
-    bottom: 3px;
-    color: #fff;
-}
-
-.navbar-brand-text small {
-    display: block;
-    font-size: 10px;
-    line-height: 1;
-    text-transform: uppercase;
+    bottom: 1px;
     color: #fff;
 }
 
