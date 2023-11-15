@@ -1,37 +1,285 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-<head>
- <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Eye Echo</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/scripts.js" defer></script>
+        <script src="js/jquery.min.js" defer></script>
+        <script src="js/bootstrap.bundle.min.js" defer></script>
+        <script src="js/jquery.sticky.js" defer></script>
+
+        <!-- Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon-16x16.png">
+        <link rel="manifest" href="./images/icons/site.webmanifest">
+        <link rel="mask-icon" href="./images/icons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="./images/icons/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="Eye Echo">
+        <meta name="application-name" content="Eye Echo">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="./images/icons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+<!--
+TemplateMo 587 Tiya Golf Club
+https://templatemo.com/tm-587-tiya-golf-club
+-->
+    </head>
+    <body>
+        <main>
+            
+            <nav class="navbar navbar-expand-lg">                
+                <div class="container is-sticky is-sticky">
+                    <a class="navbar-brand d-flex align-items-center nav-link" href="#home">
+                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Eye Echo">
+                        <span class="navbar-brand-text">
+                            Eye Echo
+                            <!-- <small>Oog op de baby</small> -->
+                        </span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-3">
+                        <!-- <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Afspraak maken</a> -->
+                        <a class="btn custom-btn custom-border-btn nav-link" href="#contact" role="button" aria-controls="offcanvasExample">Afspraak maken</a>
 
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item"><a data-Home class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a data-Over class="nav-link" href="#over">Over</a></li>
+                            <li class="nav-item"><a data-Echo class="nav-link" href="#echo">De echo</a></li>
+                            <li class="nav-item"><a data-Contact class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+
+                        <div class="d-none d-lg-block ms-lg-3">
+                            <!-- <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Afspraak maken</a> -->
+                            <a class="btn custom-btn custom-border-btn nav-link" href="#contact" role="button">Afspraak maken</a>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section data-Home class="hero-section d-flex justify-content-center align-items-center" id="home">
+                <div class="section-overlay"></div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d3b158" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+
+                <div class="container"><div class="row">
+                    <div class="col-md-6 col-12 mb-5 mb-lg-0">
+                        <h1 class="text-white">Welkom bij Eye Echo</h2>
+                        <h2 class="text-white mb-4 pb-2">Met het oog op je baby</h2>
+                    </div>
+                </div></div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fffaf0" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            </section>
+
+            <section class="about-section" id="over">
+                <div class="container">
+                    <div class="row justify-content-around align-items-center">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-lg-5 mb-4">Over Eye Echo</h2>
+                        </div>
+
+                        <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                            <h3 class="mb-3">Benieuwd naar de ontwikkeling van je kindje?</h3>
+
+                            <p>Zwanger zijn is een bijzondere periode in je leven. 
+                                Echoscopie speelt een belangrijke rol hierbij. 
+                                Bij Eye Echo kun je al voor de geboorte je kindje uitgebreid bekijken. 
+                                Je kindje staat dan centraal tijdens de echo en samen bekijken we de ontwikkelingen.</p>
+
+                            <p>We nemen de tijd, maken mooie beelden en geven uitleg. Uiteraard krijg je foto's mee. Volwassenen en / of kinderen zijn welkom.</p>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                            <div class="member-block">
+                                <div class="member-block-image-wrap">
+                                    <img src="images/pregnantWoman.jpg" class="member-block-image img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-bg" id="echo">
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#fffaf0" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="#fffaf0" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="#fffaf0" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="#fffaf0" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="#fffaf0" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
+                            <h2>De echo</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-3 mb-lg-0">
+                            <!-- <h4 class="mb-4 pb-lg-2">Kindje kijken / moment-echo / jongen of meisje / geslachtsbepaling / controle ligging spiraal</h4>
+
+                            <div>
+                                <div class="member-block">
+                                    <div class="member-block-image-wrap">
+                                        <img src="images/pregnantWoman.jpg" class="member-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <p>Gedurende de hele zwangerschap ben je welkom voor kindje kijken / een moment-echo.
+                                Vanaf ongeveer 6 weken is een kloppend hartje al zichtbaar. Voor het beste beeld kijken we tot 10 weken het liefst met een inwendige echo.
+                                Rond 16 weken is het geslacht met vrij grote zekerheid te zien (99.9%).</p>
+                            <ul><li>Invulling naar uw wens</li>
+                                <li>Mogelijk gedurende de gehele zwangerschap. </li>
+                                <li>Geslachtsbepaling vanaf 16 weken.</li>
+                                <li>Geprinte foto's mee na afloop.</li>
+                                <li>Ook controle ligging spiraal mogelijk.</li> 
+                            </ul>
+                                <p>€ 40,-</p> -->
+                                <p>Gedurende de hele zwangerschap ben je welkom. 
+                                    Vanaf ongeveer 6 weken is een kloppend hartje al zichtbaar!<br>
+                                    Echter, rond 16 weken zwangerschap is het kindje het best te zien, 
+                                    en is het geslacht met vrij grote zekerheid vast te stellen.
+                                    Tijdens deze 16-weken echo zoeken we de mooiste beelden van het snoetje, handjes en voetjes.
+                                    Ondertussen kunnen we uitleg geven over de ontwikkelingen en zo veel mogelijk jullie vragen beantwoorden.
+                                    </p>
+                                <ul>
+                                    <li>Invulling naar jullie wens</li>
+                                    <li>Uitgebreide blik op je baby</li>
+                                    <li>Uitleg over de ontwikkeling</li>
+                                    <li>Geprinte foto's mee na afloop</li>
+                                </ul>
+                                <p>Uitgebreide 16-weken echo: <br> € 60,-</p>
+                                
+                        </div>
+                        <div class="col-lg-5 col-12">
+                            <!-- <h4 class="mb-4 pb-lg-2">De uitgebreide 16-weken echo</h4>  -->
+                        
+                            <div class="member-block">
+                                <div class="member-block-image-wrap">
+                                    <img src="images/pregnantWoman.jpg" class="member-block-image img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <br><hr style="margin: 20px 0;"><br><br>
+                        <p>We doen ons uiterste best voor een mooie echo, maar zijn afhankelijk van de ligging van je kindje.
+                            De echo wordt uitgevoerd door een gespecialiseerd en ervaren echoscopist.</p>
+                            <br><p>Wil je alleen het geslacht weten? <br>€ 40,-</p>
+                    </div>
+                </div>
+
+                <!-- <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#fffaf0" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="#fffaf0" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="#fffaf0" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="#fffaf0" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="#fffaf0" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg> -->
+            </section>
+
+            <section class="section-bg-image not-in-header">
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#f1ecc8" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="#f1ecc8" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="#f1ecc8" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="#f1ecc8" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="#f1ecc8" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+                <div class="section-bg-image-BACKGROUNDSELF"></div>
+                <div class="container">
+                    <div class="row  align-items-center">
+
+                        <div class="col-lg-6 col-12">
+                            <div class="section-bg-image-block">
+                                <h2 class="mb-lg-3">Wie maakt de echo?</h2>
+
+                                <p> De echoscopist, Annemiek Smulders, maakt al sinds de jaren '90 medische echo's. Ze is bevoegd en bekwaam voor alle
+                                    echo's van de prenatale screening. Voorheen werkte ze jarenlang als verloskundige in Amsterdam en omstreken.
+                                    
+                                    Annemiek vindt het belangrijk dat ouders zonder medische blik naar hun kind kunnen kijken, om er 
+                                    op die manier kennis mee te maken. Daarom is ze Eye Echo begonnen!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="member-block">
+                                <div class="member-block-image-wrap">
+                                    <img src="images/Annemiek.jpg" class="member-block-image img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#fffaf0" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="#fffaf0" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="#fffaf0" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="#fffaf0" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="#fffaf0" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <div class="container"><div class="row  align-items-center">
+
+                        <h2 class="mb-4 pb-2 mt-3">Contact</h2>
+
+                        <p>Voor een afspraak en / of vragen kun je contact opnemen via Whatsapp of de mail. Wij prefereren contact via Whatsapp.</p>
+
+                        <div class="col-md-4 col-12 pb-4 mw-30">
+                            <a href="https://wa.me/31623489764"><img src="images/WhatsAppButtonGreenLarge.svg"></a>
+
+                        </div>
+                        <div class="col-md-5 col-12 pb-2">
+                            <strong>Middelburg, Zeeland</strong>
+
+                            <p class="mt-2 mb-1">
+                                <a href="tel: +31623489764" class="contact-link">+31 (0) 6 23489764</a>
+                            </p>
+
+                            <p class="mb-0">
+                                <a href="mailto:info@eye-echo.nl" class="contact-link">info@eye-echo.nl</a>
+                            </p>
+                        </div>
+
+                        <p>Betalen kan ter plekke middels een Tikkie of QR-code.</p>
 
 
+                </div></div>
+            </section>
+        
+        </main>
+        <footer class="site-footer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            
+            <div id="greenWrapperFooter">
+                <div class="container"><div class="row justify-content-center">
 
+                        <div class="col-md-4 col-12 mb-3 mb-lg-0">
+                            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                                <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="">
+                                <span class="navbar-brand-text">
+                                    Eye Echo
+                                    <!-- <small>Oog op de baby</small> -->
+                                </span>
+                            </a>
+                        </div>
 
-
- <link rel="stylesheet" href="styles.css">
- <title>Eye Echo</title>
-</head>
-<body>
- <div>
- 
- <h1>Welkom bij Eye Echo</h1>
- <h3>Website onder constructie</h3><br>
-
- <img src="images/logo.jpg">
-<br>
- <h2>Mail: <a href="mailto:info@eye-echo.nl">info@eye-echo.nl</a> <br> Whatsapp: <a href="https://wa.me/31623489764">+31 (0) 6 23489764</a></h2>
-
-</div>
-</body>
+                        <div class="col-md-4 col-12">
+                            <div>
+                                <p class="copyright-text"></p>
+                                <p class="copyright-text">Design: 
+                                    <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                                     & <a href="https://github.com/feikescholtens">Feike Scholtens</a></p>
+                            </div>
+                        </div>
+                    
+                </div></div>
+            </div>
+        </footer>
+    </body>
 </html>

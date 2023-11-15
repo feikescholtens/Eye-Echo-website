@@ -23,8 +23,6 @@ https://templatemo.com/tm-587-tiya-golf-club
 
     --body-font-family: 'Exo 2', sans-serif;
 
-    --h1-font-size: 42px;
-    --h2-font-size: 36px;
     --h3-font-size: 28px;
     --h4-font-size: 24px;
     --h5-font-size: 22px;
@@ -54,7 +52,6 @@ body {
   TYPOGRAPHY               
 -----------------------------------------*/
 
-h2,
 h3,
 h4,
 h5,
@@ -62,26 +59,12 @@ h6 {
     color: var(--dark-color);
 }
 
-h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
     font-weight: var(--font-weight-medium);
     letter-spacing: -1px;
-}
-
-h1 {
-    font-size: var(--h1-font-size);
-    font-weight: var(--font-weight-bold);
-}
-
-h2 {
-    /* font-size: var(--h2-font-size);
-    font-weight: var(--font-weight-bold); */
-    font-size: 2.5em !important;
-    font-weight: 500 !important;
 }
 
 h3 {
@@ -734,10 +717,6 @@ strong {
     padding: 20px 30px;
 }
 
-.custom-block-date {
-    font-size: var(--h1-font-size);
-}
-
 .custom-block-image-wrap {
     border-radius: var(--border-radius-medium);
     position: relative;
@@ -1012,13 +991,6 @@ strong {
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
-    h1 {
-        font-size: 36px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
 
     h3 {
         font-size: 22px;
@@ -1125,6 +1097,15 @@ strong {
 }
 
 /* CUSTOM CSS */
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
 
 @media screen and (max-width: 992px) {
     #over .col-md-6 {
