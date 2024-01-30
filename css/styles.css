@@ -886,6 +886,27 @@ strong {
     height: 100px;
 }
 
+/*---------------------------------------
+  EXPERIENCES SECTION               
+-----------------------------------------*/
+
+.experiences-section .container {
+    padding-top: 70px !important;
+    padding-bottom: 10px !important;
+}
+
+.experiences-section #float_items p {
+    float: left;
+}
+
+.experiences-section #float_items p:last-child {
+    float: right;
+}
+
+.experiences-section .container .row {
+    display: flex;
+    justify-content: space-around;
+}
 
 /*---------------------------------------
   CONTACT               
