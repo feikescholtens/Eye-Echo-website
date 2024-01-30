@@ -1129,9 +1129,9 @@ h2 {
 }
 
 @media screen and (max-width: 992px) {
-    #over .col-md-6 {
+    /* #over .col-md-6 {
         display: none;
-    }
+    } */
 
     .hero-section .row {
         margin-top: 100px;
