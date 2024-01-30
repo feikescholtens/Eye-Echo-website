@@ -912,6 +912,11 @@ strong {
   CONTACT               
 -----------------------------------------*/
 
+.contact-section .row {
+    display: flex;
+    justify-content: space-around;
+}
+
 .contact-info-body {
     padding: 20px 30px;
 }
@@ -1187,4 +1192,5 @@ h2 {
 
 .site-footer .row a {
     max-width: none !important;
+    color: var(--p-color);
 }
