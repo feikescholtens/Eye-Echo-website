@@ -130,11 +130,13 @@ strong {
     bottom: -1px;
 }
 
-.section-bg .container,
-.contact-section,
-.about-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.section-bg .container, .about-section {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.contact-section {
+    padding-top: 30px;
 }
 
 .section-overlay {
@@ -435,6 +437,9 @@ strong {
     z-index: 99;
     padding-top: 15px;
     padding-bottom: 15px;
+    background-color: #d3b158;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar-brand,
@@ -643,6 +648,7 @@ strong {
 .section-bg-image svg {
     position: relative;
     z-index: 1;
+    padding-bottom: 40px;
 }
 
 .section-bg-image .container+svg {
@@ -1087,9 +1093,6 @@ strong {
         padding: 30px;
     }
 
-    .site-footer {
-        padding-top: 20px;
-    }
 }
 
 @media screen and (max-width: 480px) {

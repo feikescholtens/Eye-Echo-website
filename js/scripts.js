@@ -32,8 +32,8 @@ function setActiveLabel(label) {
   document.querySelectorAll(".nav-link").forEach(navLink => navLink.classList.remove("active"))
   document.querySelector(`[data-${label}]`).classList.add("active")
 
-  if (label == "Home") history.pushState("", document.title, window.location.pathname + window.location.search)
-  else history.pushState({}, "", `#${label.toLowerCase()}`)
+  if (label == "Home") history.replaceState("", document.title, window.location.pathname + window.location.search)
+  else history.replaceState({}, "", `#${label.toLowerCase()}`)
 }
 
 //Custom listeners to scroll exactly to the right place
@@ -42,10 +42,16 @@ document.querySelectorAll(".nav-link").forEach(navLink => {
 
     event.preventDefault()
 
-    //Collapse menu
-    $('.navbar-collapse a').on('click', function() {
-      $(".navbar-collapse").collapse('hide');
-    });
+    // Collapse menu (vanilla JS using Bootstrap's Collapse API)
+    const navbarCollapseEl = document.querySelector('.navbar-collapse');
+    if (navbarCollapseEl && window.bootstrap && typeof window.bootstrap.Collapse === 'function') {
+      // Get existing instance or create one without toggling
+      const bsCollapse = window.bootstrap.Collapse.getInstance(navbarCollapseEl) || new window.bootstrap.Collapse(navbarCollapseEl, { toggle: false });
+      bsCollapse.hide();
+    } else if (navbarCollapseEl) {
+      // Fallback: toggle the class used by Bootstrap to hide the collapse
+      navbarCollapseEl.classList.remove('show');
+    }
 
     const label = navLink.innerText
     let pixels
@@ -53,7 +59,7 @@ document.querySelectorAll(".nav-link").forEach(navLink => {
     if (label === "Home" || label.split("\n")[0] === "Eye Echo") pixels = beginPixelsSections[0]
     //Second check in if statement if for logo in navbar
     if (label === "Over") pixels = beginPixelsSections[1] + 100
-    if (label === "De echo") pixels = beginPixelsSections[2] + 169
+    if (label === "De echo") pixels = beginPixelsSections[2] + 250
     if (label === "Contact" || label === "Afspraak maken") pixels = beginPixelsSections[3] + 100
 
     window.scrollTo({ top: pixels, behavior: "smooth" })
